@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>while</title>
+</head>
+<body>
+    <script text="text/javascript">
+        document.write("<tr>");
+        document.write("<td> value </td>");
+
+        fib1 = 1;
+        fib2 = 1;
+        while(fib2 < 1000){
+            document.write("<td>");
+            document.write(fib2);
+            document.write("</td>");
+            tmp = fib1 + fib2;
+            fib1 = fib2;
+            fib2 = tmp;
+        }
+        document.write("</tr>");
+    </script>
+</body>
+</html>
