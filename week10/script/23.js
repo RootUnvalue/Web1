@@ -1,8 +1,16 @@
-var arr = new Array;
-arr = prompt("정수를 띄어쓰기 없이 입력하시오.");
+var n = prompt("입력받을 정수 수");
 
-var max, min, tmp1 = 0, tmp2 = 9;
+var arr = new Array;
+for(i=0; i<n; i++){
+    arr[i] = prompt((i + 1) + "번째 정수를 입력하세요.");
+}
+
+var max, min;
 for(i=0; i < arr.length; i++){
+    if(i==0){
+        tmp1 = arr[i];
+        tmp2 = arr[i];
+    }
     max = Math.max(tmp1, arr[i]);
     tmp1 = max;
     min = Math.min(tmp2, arr[i]);
