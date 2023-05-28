@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>changebackground</title>
+</head>
+<body>
+    <div id="outerBox" style="background: blue; width: 550px; height: 300px;">
+
+        <div id="innerBox" style="background: yellow; width: 450px; height: 200px; position:  absolute; left: 50px; top: 50px;">
+            <img id="img1" src="src/html5_logo.png" width="100px" alt="히히 안보여" style="position: absolute; left: 50px; top: 25px; visibility: visible;">
+            <img id="img2" src="src/html5_logo.png" width="100px" alt="히히 안보여" style="position: absolute; left: 175px; top: 25px; visibility: visible;">
+            <img id="img3" src="src/html5_logo.png" width="100px" alt="히히 안보여" style="position: absolute; left: 300px; top: 25px; visibility: visible;">
+        </div>
+    </div>
+
+    Outer Box:
+    <button onclick="changeColor('outerBox', 'red')" > RED </button>
+    <button onclick="changeColor('outerBox', 'green')" > GREEN </button>
+    <button onclick="changeColor('outerBox', 'blue')" > BLUE </button>
+
+    Inner Box:
+    <button onclick="changeColor('innerBox', 'red')" > RED </button>
+    <button onclick="changeColor('innerBox', 'green')" > GREEN </button>
+    <button onclick="changeColor('innerBox', 'blue')" > BLUE </button>
+    
+    <script type="text/javascript">
+        function changeColor(id, color){
+            document.getElementById(id).style.background = color;
+        }
+    </script>
+</body>
+</html>

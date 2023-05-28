@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>23</title>
+        <meta charset="UTF-8">
+        <style>
+            .header{
+                background-color: black;
+                color: white;
+                padding: 5px;
+            }
+
+            .nav{
+              background-color: gray;
+            }
+
+            .article{
+              border: 4px solid gray;
+              width: 70%;
+              margin: 3px;
+              padding: 10px;
+            }
+            
+            .section{
+              margin: 3px;
+              margin-bottom: 10px;
+              padding: 10px;
+              height: 20vh;
+            }
+
+            .aside{
+              position: absolute;
+              width: 20%;
+              top:30vh;
+              right: 20px;
+              padding: 5px;
+              padding-bottom: 40px;
+              min-width: 120px;
+              height:45%;
+              background-color: black;
+              color: white;
+            }
+
+            .footer{
+              margin: 4px;
+              background-color: gray;
+              padding: 5px;
+            }
+
+            .bg {background-color: gray;}
+            strong {font-size: 40px;}
+            .at{
+                width:300px;
+                table-layout: fixed;
+                height:50px;
+                text-align: center;
+            }
+            #black{
+                background-color: black;
+                color:white; 
+            }
+            #gray{
+                background-color: gray;
+                color:black; 
+            }
+
+        </style>
+    </head>
+
+    <body>
+        
+        <header class="header">
+            <h2>header</h2>
+            <h5>header의 두번째 제목입니다.</h5>
+        </header>
+        
+        <nav class="nav">
+          <Table border="0" class="bg">
+            <td>메뉴1</td> <td>메뉴2</td> <td>메뉴3</td> <td>메뉴4</td> <td>메뉴5</td>
+          </Table>
+        </nav>
+        
+        <article class="article">
+          <section class="section" id="gray">
+            <h2>article1</h2>
+            <p>article1의 본문<br> </p>
+          </section>
+          <hr>
+          <section class="section" id="gray">
+            <h2>article2</h2>
+            <p>article2의 본문<br> </p>
+          </section>
+        </article>
+
+        <aside class="aside">
+          <h3>aside</h3>
+          <p>aside의 본문입니다.</p>
+        </aside>
+
+        <footer class="footer">
+            <p>footer</p>
+        </footer>
+    </body>
+</html>

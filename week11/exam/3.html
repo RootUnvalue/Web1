@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>domaccess</title>
+</head>
+<body>
+    <form>
+        <input id="username" type="text" value="Name of User">
+    </form>
+
+    <script text="text/javascript">
+        var dom = document.getElementById("username");
+        alert(dom.value);
+        var newValue = prompt("Type new value of text box", "");
+        dom.value = newValue;
+    </script>
+</body>
+</html>

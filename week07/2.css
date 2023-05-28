@@ -1,0 +1,45 @@
+/* .booklist ul li .hidden1,.hidden2,.hidden3,.hidden4,.hidden5,.hidden6 {
+    visibility: hidden;
+}
+
+.booklist ul li .book1:hover + .hidden1 {
+    visibility: visible;
+}
+
+.booklist ul li .book2:hover + .hidden2 {
+    visibility: visible;
+}
+
+.booklist ul li .book3:hover + .hidden3 {
+    visibility: visible;
+}
+
+.booklist ul li .book4:hover + .hidden4 {
+    visibility: visible;
+}
+
+.booklist ul li .book5:hover + .hidden5 {
+    visibility: visible;
+}
+
+.booklist ul li .book6:hover + .hidden6 {
+    visibility: visible;
+} */
+
+.booklist ul {
+    visibility: hidden;
+}
+
+.booklist ul li img{
+    visibility: visible;
+}
+
+.booklist ul li:hover{
+    visibility: visible
+}
+
+body { margin: 0; padding: 0; line-height: 1.2em; font-size: 0.75; line-height: 1.2em; }
+header { vertical-align: middle; }
+.booklist { margin: 10px; padding:  5px; }
+.booklist .head { margin: 15px 0 0 10px; }
+.booklist ul li { float: left; margin: 10px; list-style-type: none; }
