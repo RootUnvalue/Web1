@@ -1,4 +1,0 @@
-/* 'style'에는 빨간색 글자, 폰트는 휴먼매직체, 크기는 20포인트로 설정하고, 굵은 글자인 'css'와 '언어'는 파란색 글자, 폰트는 휴멋옛체, 크기는 20포인트로 설정한다. */
-
-    #st { color: red; font-family: "휴먼매직체" "san-serif"; font-size: 20pt; text-decoration: underline;}
-    #cs { color: blue; font-family: "휴멋옛체" "sans-serif"; font-size: 20px; font-weight: bold;}
