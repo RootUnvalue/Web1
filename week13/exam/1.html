@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>drga_ex</title>
+</head>
+<body>
+    <div id="src" style="display: block;">
+        <img id="html5" src="src/html5_logo.png" alt="히히 못가" style="display: inline; width: 150px;" draggable="true">
+        <img id="css3" src="src/CSS_logo.png" alt="히히 안 보여" style="display: inline; width: 150px;" draggable="false">
+        <img id="js" src="src/JS_logo.png" alt="히히 시발.." style="display: inline; width: 150px;">
+    </div>
+    <div id="process"></div>
+
+    <script type="text/javascript">
+        var src = document.getElementById("src");
+        var srcId, i=0;
+        process = document.getElementById("process");
+
+        src.ondragstart = function(e){
+            srcId = e.target.id;
+            process.innerHTML = "Start: " + srcId + "<br>";
+        }
+
+        src.ondrag = function(e){
+            process.innerHTML = "Start: " + srcId + "<br> drag: " + srcId + "[" + (i++) + "]";
+         }
+
+        src.ondragend = function(e){
+            process.innerHTML += "<br> end: " + srcId + "<br>";
+        }
+    </script>
+</body>
+</html>
