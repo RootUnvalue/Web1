@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>geo_trace</title>
+</head>
+<body>
+    <h3>연속 위치 추적</h3>
+    <button onclick="startMyLocation();">추적 시작</button>
+    <button onclick="stopMyLocation();">추적 중지</button>
+    <div id="display"></div>
+
+    <script type="text/javascript">
+        var watchID, i=0;
+        function startMyLocation(){
+            if (navigator.geolocation) {
+                watchID = navigator.geolocation.watchPosition(myCallBack);
+            } else {
+                alert("Geolocation 이 지원되지 않는다.");
+            }
+        }
+
+        function myCallBack(myPosition){
+            var latitude = myPosition.coords.latitude;
+            var longitude = myPosition.coords.longitude;
+            var date = new Date();
+            var parsedDate = date.toUTCString();
+
+            document.getElementById("display").innerHTML = "위치: 일시 " + parsedDate + "에 위도 " + latitude + "경도 " + longitude;
+        }
+
+        function stopMyLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.clearWatch(watchID);
+            }else{
+                alert("Geolocation 이 지원되지 않는다.");
+            }
+        }
+    </script>
+</body>
+</html>
