@@ -6,10 +6,33 @@
 </head>
 <body>
     <div id="div">
-        <img id="1" src="src/봇치.webp" alt="봇치">
-        <img id="2" src="src/니지카.webp" alt="니지카">
-        <img id="3" src="src/료.webp" alt="료">
-        <img id="4" src="src/키타.webp" alt="키타">
+        <!-- <input type="text" id="animation_ms" size="6" value="1000"> -->
+        <p id="test"></p>
+        <br>
+        <input id="animation_start" type="button" value="애니메이션 시작" onclick="animation();">
+        <br>
+        <br>
+        <figure id="1" style="display: inline-block; position: absolute; visibility: visible;">
+            <img width="320" height="400" src="src/봇치.webp" alt="봇치">
+            <br>
+            <input id="c1" type="checkbox" checked="true">
+        </figure>
+        <figure id="2"  style="display: inline-block; position: absolute; visibility: visible; left: 25%;">
+            <img width="320" height="400" src="src/니지카.webp" alt="니지카">
+            <br>
+            <input id="c2" type="checkbox" checked="true">
+        </figure>
+        <figure id="3" style="display: inline-block; position: absolute; visibility: visible; left: 50%;">
+            <img width="320" height="400" src="src/료.webp" alt="료" >
+            <br>
+            <input id="c3" type="checkbox" checked="true">
+        </figure>
+        <figure id="4" style="display: inline-block; position: absolute; visibility: visible; left: 75%;">
+            <img width="320" height="400" src="src/키타.webp" alt="키타">
+            <br>
+            <input id="c4" type="checkbox" checked="true">
+        </figure>
+    
     </div>
     <script src="script/24.js" type="text/javascript">
     </script>
