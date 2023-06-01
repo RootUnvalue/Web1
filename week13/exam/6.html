@@ -32,8 +32,8 @@
         });
 
         kakao.maps.event.addListener(map, 'click', function (mouseEvent){
-            console.log("지도에서 클릭한 위치의 좌표는 " + mouseEvent.lagLng.toString() +" 입니다.");
-            alert("지도에서 클릭한 위치의 좌표는 " + mouseEvent.lagLng.toString() +" 입니다.");
+            console.log("지도에서 클릭한 위치의 좌표는 " + mouseEvent.latLng.toString() +" 입니다.");
+            alert("지도에서 클릭한 위치의 좌표는 " + mouseEvent.latLng.toString() +" 입니다.");
         })
     </script>
 </body>
