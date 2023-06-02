@@ -21,15 +21,15 @@ imgs[3].ondragstart = function (e) {
     imgsf = '"../week12/src/키타.webp"';
 }
 
-var dropfeild = document.getElementById("dropfeild");
+var dropfield = document.getElementById("dropfield");
 
-dropfeild.ondragover = function (e) {
+dropfield.ondragover = function (e) {
     e.preventDefault();
     e.target.style.background = 'gray';
 }
-var backgroundst = document.getElementById("dropfeild").style;
+var backgroundst = document.getElementById("dropfield").style;
 
-dropfeild.ondrop = function (e){
+dropfield.ondrop = function (e){
     e.preventDefault();
     e.target.style.background = 'transparent';
 
