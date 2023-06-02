@@ -34,6 +34,7 @@ dropfeild.ondrop = function (e){
     e.target.style.background = 'transparent';
 
     var file_name = e.dataTransfer.getData("text");
+    document.getElementById("display").innerHTML = "<p>파일 이름:" + file_name + "</p>";
     backgroundst.backgroundImage = 'url(' + imgsf + ')';
     backgroundst.backgroundRepeat = 'no-repeat';
     backgroundst.backgroundPosition = 'center';
