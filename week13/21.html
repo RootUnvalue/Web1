@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style type="text/css">
-        img { display: inline-block; width: 7%; height: 10%;}
+        .ims { position: relative;}
+        .ims img { display: inline-block; width: 7%; height: 10%;}
+        #dropfeild { border: solid 2px black; width: 50%; height: 70vh;
+            display: block; 
+        }
     </style>
 </head>
 <body>
     <h2>&nbsp; Drop Here</h2>
-    <div id="dropfeild" style="border: solid 2px black; width: 50%; height: 40vh; display: inline-block;"></div>
-    <br>
-    <p id="name">파일 이름: </p>
-    <img id="hitori" src="../week12/src/봇치.webp" alt="봇치" draggable="true">
-    <img id="nizika" src="../week12/src/니지카.webp" alt="니지카" draggable="true">
-    <img id="ryou" src="../week12/src/료.webp" alt="료" draggable="true">
-    <img id="kita" src="../week12/src/키타.webp" alt="키타" draggable="true">
+    <div id="dropfeild">
+    </div>
+    <div class="ims">
+        <p id="name">드래그 가능 파일:</p>
+        <img id="hitori" src="../week12/src/봇치.webp" alt="봇치" draggable="true">
+        <img id="nizika" src="../week12/src/니지카.webp" alt="니지카" draggable="true">
+        <img id="ryou" src="../week12/src/료.webp" alt="료" draggable="true">
+        <img id="kita" src="../week12/src/키타.webp" alt="키타" draggable="true">
+    </div>
     <script type="text/javascript" src="script/21.js"></script>
+
 </body>
 </html>
