@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        .ims { position: relative;}
+        .ims img { display: inline-block; width: 7%; height: 10%;}
+        #dropfield { border: solid 2px black; width: 50%; height: 70vh;
+            display: block; 
+        }
+    </style>
+</head>
+<body onload="pload();">
+    <h2>&nbsp; Drop Here</h2>
+    <div id="dropfield">
+    </div>
+    <div class="ims">
+        <p id="name">드래그 가능 파일:</p>
+        <img id="hitori" src="../week12/src/봇치.webp" alt="봇치" draggable="true">
+        <img id="nizika" src="../week12/src/니지카.webp" alt="니지카" draggable="true">
+        <img id="ryou" src="../week12/src/료.webp" alt="료" draggable="true">
+        <img id="kita" src="../week12/src/키타.webp" alt="키타" draggable="true">
+    </div>
+    <div id="display"></div>
+    <script type="text/javascript" src="script/24.js"></script>
+
+</body>
+</html>
